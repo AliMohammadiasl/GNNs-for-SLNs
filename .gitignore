@@ -157,6 +157,7 @@ cython_debug/
 
 # Project Specific
 results/
+*.zip
 archive/
 *.txt
 prepend_headers.py
