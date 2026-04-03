@@ -160,6 +160,7 @@ results/
 *.zip
 archive/
 *.txt
+!requirements.txt
 prepend_headers.py
 generate_cnn_nb.py
 generate_mlp_nb.py
