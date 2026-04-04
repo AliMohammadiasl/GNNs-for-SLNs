@@ -15,8 +15,20 @@ def get_config(debug=False):
         percentages = [0.1, 0.25]
     else:
         datasets = ['algo004', 'comp', 'ml', 'virtualshakespeare']
-        seeds = [18, 61, 53, 29, 69, 42, 2, 21, 78, 99]
         percentages = [0.1, 0.25, 0.5, 0.75]
+        
+        seed_file = 'seeds.txt'
+        if os.path.exists(seed_file):
+            with open(seed_file, 'r') as f:
+                seeds = [int(line.strip()) for line in f.readlines() if line.strip().isdigit()]
+            if len(seeds) == 0:
+                seeds = list(int(s) for s in np.random.randint(1, 1000, size=10))
+        else:
+            seeds = list(int(s) for s in np.random.randint(1, 1000, size=10))
+            with open(seed_file, 'w') as f:
+                for seed in seeds:
+                    f.write(f"{seed}\n")
+                    
     return datasets, seeds, percentages
 
 def compute_loss_gnn(pos_score, neg_score, device, max_weight=20):

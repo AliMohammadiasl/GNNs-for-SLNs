@@ -78,3 +78,9 @@ docker run -p 8888:8888 sln-gnn-env
 1. Configure your datasets, seeds, and execution mode in `utils.py` or within `Cell 2` of the notebooks. 
 2. **Debug Mode:** By default, the notebooks might be set to `DEBUG = True` to run a small subset (1 seed, 1 dataset, limited epochs) for regression testing. Set `DEBUG = False` to run the full paper experiments.
 3. Run the notebooks sequentially or focus on `03_GNN_GraphSAGE.ipynb` to evaluate the primary GNN model. Output confusion matrices and models will be saved in the `results/` folder.
+
+## Notes on Reproducibility
+You might obtain slightly different results (compared to those presented in the paper) by running the code, due to the following sources of randomness:
+- The `utils.py` script automatically generates 10 random seeds on the first run (saving them to `seeds.txt`) to ensure consistent splits across all models, but these seeds differ from the original runs.
+- Model parameters are initialized randomly across PyTorch and DGL.
+
