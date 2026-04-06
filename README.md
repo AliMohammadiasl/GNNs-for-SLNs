@@ -1,8 +1,6 @@
 # Spatiotemporal Link Formation Prediction in Social Learning Networks Using Graph Neural Networks
 
 ## About
-
-## About
    This repository hosts code to obtain results in our paper, Spatiotemporal
      Link Formation Prediction in Social Learning Networks Using Graph Neural
      Networks. If you use or adapt our code into your work, we kindly ask that
