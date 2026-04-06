@@ -1,5 +1,19 @@
 # Spatiotemporal Link Formation Prediction in Social Learning Networks Using Graph Neural Networks
 
+## About
+
+## About
+   This repository hosts code to obtain results in our paper, Spatiotemporal
+     Link Formation Prediction in Social Learning Networks Using Graph Neural
+     Networks. If you use or adapt our code into your work, we kindly ask that
+     you cite our corresponding paper: A. Mohammadiasl, B. Akram, S.
+     Hosseinalipour, R. Sahay, "Spatiotemporal Link Formation Prediction in
+     Social Learning Networks Using Graph Neural Networks,” in 2026 Educational
+     Data Mining, 2026. Please note that the datasets hosted here were
+     originally produced in the following works:
+     [[1]](https://ieeexplore.ieee.org/document/8485927) and
+     [[2]](https://ieeexplore.ieee.org/document/10025018).
+
 ## Abstract
 Social learning networks (SLNs) are graphical representations that capture student interactions within educational settings (e.g., a classroom), with nodes representing students and edges denoting interactions. Accurately predicting future interactions in these networks (i.e., link prediction) is crucial for enabling effective collaborative learning, supporting timely instructional interventions, and informing the design of effective group-based learning activities. However, traditional link prediction approaches are typically tuned to general online social networks (OSNs), often overlooking the complex, non-Euclidean, and dynamically evolving structure of SLNs, thus limiting their effectiveness in educational settings. 
 
