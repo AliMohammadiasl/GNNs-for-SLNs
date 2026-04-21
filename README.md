@@ -6,7 +6,7 @@
      Networks. If you use or adapt our code into your work, we kindly ask that
      you cite our corresponding paper: A. Mohammadiasl, B. Akram, S.
      Hosseinalipour, R. Sahay, "Spatiotemporal Link Formation Prediction in
-     Social Learning Networks Using Graph Neural Networks,” in 2026 Educational
+     Social Learning Networks Using Graph Neural Networks,” in Educational
      Data Mining, 2026. Please note that the datasets hosted here were
      originally produced in the following works:
      [[1]](https://ieeexplore.ieee.org/document/8485927) and
